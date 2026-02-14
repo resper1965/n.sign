@@ -1,31 +1,23 @@
 <p align="center">
-  <img src="https://img.shields.io/badge/version-2.1.0-00ade8?style=for-the-badge" alt="Version">
+  <img src="https://img.shields.io/badge/ness.MKT-v1.0.0-00ade8?style=for-the-badge" alt="Version">
   <img src="https://img.shields.io/badge/Next.js-16-black?style=for-the-badge&logo=next.js" alt="Next.js">
   <img src="https://img.shields.io/badge/TypeScript-5-blue?style=for-the-badge&logo=typescript" alt="TypeScript">
-  <img src="https://img.shields.io/badge/Tailwind-4-38bdf8?style=for-the-badge&logo=tailwindcss" alt="Tailwind">
+  <img src="https://img.shields.io/badge/Firebase-Hosting/Functions/Firestore-FFCA28?style=for-the-badge&logo=firebase" alt="Firebase">
+</p>
+
+<h1 align="center">ness.MKT</h1>
+
+<p align="center">
+  <strong>Marketing Toolkit da NESS</strong><br>
+  <em>8 ferramentas profissionais de marketing em uma única plataforma</em>
 </p>
 
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/n.sign-Gerador%20de%20Assinaturas-00ade8?style=for-the-badge">
-    <img src="https://img.shields.io/badge/n.sign-Gerador%20de%20Assinaturas-00ade8?style=for-the-badge" alt="n.sign">
-  </picture>
-</p>
-
-<h1 align="center">n.sign</h1>
-
-<p align="center">
-  <strong>Gerador de assinaturas de e-mail profissionais da NESS</strong><br>
-  <em>Crie assinaturas corporativas elegantes em segundos</em>
-</p>
-
-<p align="center">
-  <a href="#-funcionalidades">Funcionalidades</a> •
-  <a href="#-demonstração">Demonstração</a> •
+  <a href="#-módulos">Módulos</a> •
+  <a href="#-arquitetura">Arquitetura</a> •
   <a href="#-instalação">Instalação</a> •
   <a href="#-deploy">Deploy</a> •
-  <a href="#-documentação-da-api">API</a> •
-  <a href="#-design-system">Design System</a>
+  <a href="#-documentação-da-api">API</a>
 </p>
 
 ---
@@ -33,17 +25,14 @@
 ## 📋 Índice
 
 - [Visão Geral](#-visão-geral)
-- [Funcionalidades](#-funcionalidades)
-- [Demonstração](#-demonstração)
+- [Módulos](#-módulos)
+- [Arquitetura](#-arquitetura)
 - [Stack Tecnológica](#-stack-tecnológica)
 - [Instalação](#-instalação)
 - [Configuração](#-configuração)
-- [Uso](#-uso)
 - [Deploy](#-deploy)
 - [Documentação da API](#-documentação-da-api)
 - [Design System](#-design-system)
-- [Templates](#-templates)
-- [Atalhos de Teclado](#-atalhos-de-teclado)
 - [Estrutura do Projeto](#-estrutura-do-projeto)
 - [Contribuição](#-contribuição)
 - [Licença](#-licença)
@@ -52,113 +41,214 @@
 
 ## 🎯 Visão Geral
 
-**n.sign** é uma ferramenta web profissional para criação de assinaturas de e-mail corporativas da NESS. Desenvolvida com foco em experiência do usuário e conformidade com a identidade visual da marca, a aplicação permite que colaboradores criem assinaturas profissionais em poucos segundos.
+**ness.MKT** é uma plataforma completa de ferramentas de marketing para colaboradores NESS. Parte do ecossistema **ness.OS**, oferece 8 módulos integrados para criação de materiais profissionais com conformidade total à identidade visual da marca.
 
 ### Público-Alvo
-- Colaboradores NESS
-- Executivos (C-Levels)
-- Equipes de TI e Security
-- Departamentos corporativos
 
-### Problema Resolvido
-- Padronização de assinaturas corporativas
-- Conformidade com a identidade visual NESS
-- Facilidade de uso sem necessidade de conhecimento técnico
-- Compatibilidade com clientes de e-mail (Gmail, Outlook, etc.)
+| Perfil | Módulos Principais |
+|--------|-------------------|
+| **C-Levels** | Propostas, Apresentações, Press Kit |
+| **Comercial** | Propostas, Templates Email, Cartões |
+| **Marketing** | Redes Sociais, Press Kit, Manual Marca |
+| **Todos** | Assinaturas, Cartões de Visita |
 
----
+### Benefícios
 
-## ✨ Funcionalidades
-
-### 🎨 Personalização
-
-| Funcionalidade | Descrição |
-|----------------|-----------|
-| **4 Templates** | Clássico, Moderno, Minimal, Corporativo |
-| **3 Temas** | Branco, Azul, Dark |
-| **Campos Dinâmicos** | Nome, Sobrenome, Área, E-mail, Telefone, LinkedIn, WhatsApp |
-| **Template Recomendado** | Sugestão automática baseada no cargo/área |
-
-### 🔧 Recursos Técnicos
-
-| Funcionalidade | Descrição |
-|----------------|-----------|
-| **Preview em Tempo Real** | Visualização instantânea enquanto digita |
-| **Validação de E-mail** | Verifica domínio corporativo (@ness.com.br) |
-| **Progresso de Preenchimento** | Barra indicando % de completude |
-| **Preview Responsivo** | Alternância entre Desktop e Mobile |
-
-### 📤 Exportação e Compartilhamento
-
-| Funcionalidade | Descrição |
-|----------------|-----------|
-| **Copiar HTML** | Copia assinatura para área de transferência |
-| **Exportar PNG/JPEG** | Download como imagem de alta qualidade |
-| **QR Code vCard** | Código para adicionar contato ao celular |
-| **Link Público** | URL compartilhável com contador de visualizações |
-
-### 💾 Persistência
-
-| Funcionalidade | Descrição |
-|----------------|-----------|
-| **Salvar Localmente** | Armazenamento no navegador (localStorage) |
-| **Histórico de Versões** | Até 10 versões anteriores por assinatura |
-| **Sincronização Cloud** | Banco de dados para links compartilháveis |
-
-### ⌨️ Produtividade
-
-| Atalho | Ação |
-|--------|------|
-| `Ctrl + S` | Salvar assinatura |
-| `Ctrl + Shift + C` | Copiar assinatura |
-| `Ctrl + E` | Exportar como PNG |
+- ✅ **Padronização** - Conformidade total com a marca NESS
+- ✅ **Produtividade** - Templates prontos para uso imediato
+- ✅ **Acessibilidade** - Disponível 24/7 via web
+- ✅ **Integração** - Sincronizado com ness.PEOPLE
+- ✅ **Segurança** - Acesso restrito a @ness.com.br
 
 ---
 
-## 🎬 Demonstração
+## 📦 Módulos
 
-### Interface Principal
+### 1. ✍️ Signatures (Assinaturas)
 
+**Rota:** `/assinaturas`
+
+Gerador de assinaturas de e-mail profissionais com:
+
+| Recurso | Descrição |
+|---------|-----------|
+| 4 Templates | Clássico, Moderno, Minimal, Corporativo |
+| 3 Temas | Branco, Azul, Dark |
+| Exportação | HTML, PNG, JPEG, QR Code |
+| Compartilhamento | Link público com contador de views |
+| Histórico | Até 10 versões por assinatura |
+
+**Áreas Suportadas:**
 ```
-┌─────────────────────────────────────────────────────────────┐
-│  n.sign v2.1                           [Salvas] [Ajuda]     │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  ┌──────────────────────┐  ┌──────────────────────────────┐│
-│  │ DADOS DA ASSINATURA  │  │ PRÉ-VISUALIZAÇÃO            ││
-│  │                      │  │                              ││
-│  │ Nome: [__________]   │  │  ┌────────────────────────┐ ││
-│  │ Sobrenome: [______]  │  │  │  ness.               │ ││
-│  │ Área: [▼ Selecione]  │  │  │  ─────────────────── │ ││
-│  │ Email: [__________]  │  │  │  Nome Sobrenome      │ ││
-│  │ Celular: [________]  │  │  │  CARGO               │ ││
-│  │ LinkedIn: [________] │  │  │  📞 +55 (11) ...     │ ││
-│  │ WhatsApp: [________] │  │  │  📧 email@ness.com   │ ││
-│  │                      │  │  └────────────────────────┘ ││
-│  │ Progresso: ████░ 80% │  │                              ││
-│  │                      │  │  [Template: Clássico ▼]     ││
-│  │ Ctrl+S para salvar   │  │  [Tema: Branco ▼]           ││
-│  └──────────────────────┘  │                              ││
-│                            │  [Copiar] [Exportar] [QR]    ││
-│                            │  [Salvar] [Compartilhar]     ││
-│                            └──────────────────────────────┘│
-└─────────────────────────────────────────────────────────────┘
+CEO, CFO, CTO, COO, CMO, CIO, CSO, CHRO, CPO, CDO
+n.secops, n.infraops, n.devarch, n.autoops, n.privacy, n.cirt, n.discovery
+Operations, Security, Forensic, Finance, HR, Facilities
 ```
 
-### Fluxo de Uso
+---
+
+### 2. 📖 Brand Manual (Manual da Marca)
+
+**Rota:** `/manual-marca`
+
+Diretrizes completas da identidade visual NESS:
+
+| Seção | Conteúdo |
+|-------|----------|
+| Logo | Versões, espaçamentos, usos incorretos |
+| Cores | Paleta primária e secundária |
+| Tipografia | Montserrat - pesos e tamanhos |
+| Aplicações | Papelaria, digital, sinalização |
+
+---
+
+### 3. 💳 Business Cards (Cartões de Visita)
+
+**Rota:** `/cartao-visita`
+
+Gerador de cartões de visita digitais e para impressão:
+
+| Formato | Uso |
+|---------|-----|
+| Digital | QR Code para compartilhar contato |
+| Print 85x55mm | PDF para gráfica |
+| VCard | Arquivo .vcf para importar |
+
+---
+
+### 4. 📧 Email Templates (Templates de Email)
+
+**Rota:** `/templates-email`
+
+Templates prontos para campanhas de email marketing:
+
+| Template | Finalidade |
+|----------|------------|
+| Boas-vindas | Onboarding de clientes |
+| Newsletter | Atualizações mensais |
+| Promocional | Campanhas e ofertas |
+| Transacional | Confirmações e notificações |
+| Institucional | Comunicados corporativos |
+
+---
+
+### 5. 📊 Presentations (Apresentações)
+
+**Rota:** `/apresentacoes`
+
+Templates de apresentações corporativas:
+
+| Categoria | Templates |
+|-----------|-----------|
+| Corporativo | Institucional, Quem Somos |
+| Comercial | Proposta Comercial, Pitch Deck |
+| Técnico | Case Study, Relatório Técnico |
+| Treinamento | Onboarding, Workshop |
+
+**Integração Gamma.app:** Geração automática de apresentações via IA
+
+---
+
+### 6. 📱 Social Media (Redes Sociais)
+
+**Rota:** `/redes-sociais`
+
+Guias e templates para redes sociais:
+
+| Plataforma | Conteúdo |
+|------------|----------|
+| LinkedIn | Posts, artigos, banners |
+| Instagram | Feed, Stories, Reels |
+| Twitter/X | Posts, threads |
+| YouTube | Thumbnails, banners |
+
+**Inclui:** Tamanhos recomendados, templates PSD/Figma
+
+---
+
+### 7. 📄 Proposals (Propostas)
+
+**Rota:** `/propostas`
+
+Sistema de propostas comerciais:
+
+| Recurso | Descrição |
+|---------|-----------|
+| Templates | Proposta Padrão, Enterprise, Consultoria |
+| Integração | Gamma.app para apresentações |
+| Tracking | Status: draft, sent, accepted, rejected |
+| Versionamento | Histórico de revisões |
+
+---
+
+### 8. 📰 Press Kit (Kit de Imprensa)
+
+**Rota:** `/press-kit`
+
+Materiais para imprensa e mídia:
+
+| Categoria | Arquivos |
+|-----------|----------|
+| Logos | PNG, SVG, EPS |
+| Fotos | Executivos, escritório, eventos |
+| Releases | Templates de press release |
+| Factsheet | Dados institucionais |
+
+---
+
+## 🏗️ Arquitetura
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                        ness.MKT Platform                        │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                 │
+│  ┌─────────────────┐    ┌─────────────────┐    ┌─────────────┐ │
+│  │   Next.js 16    │    │  Firebase Auth  │    │  Firestore  │ │
+│  │   (Frontend)    │◄──►│  (@ness.com.br) │    │  (Database) │ │
+│  │                 │    │                 │    │             │ │
+│  │  • App Router   │    │  • Google OAuth │    │  signatures │ │
+│  │  • Static Export│    │  • Demo Mode    │    │  proposals  │ │
+│  │  • TypeScript   │    │                 │    │  brandAssets│ │
+│  └────────┬────────┘    └─────────────────┘    └─────────────┘ │
+│           │                                                     │
+│           │  /api/*                                             │
+│           ▼                                                     │
+│  ┌─────────────────────────────────────────────────────────────┐│
+│  │              Firebase Cloud Functions                       ││
+│  │                                                             ││
+│  │  • getSignatures      • createSignature                     ││
+│  │  • getSignatureBySlug • getProposals                        ││
+│  │  • createProposal     • getProposals                        ││
+│  └─────────────────────────────────────────────────────────────┘│
+│                                                                 │
+└─────────────────────────────────────────────────────────────────┘
+                              │
+                              ▼
+              ┌───────────────────────────────┐
+              │      Firebase Hosting         │
+              │                               │
+              │  ness-mkt.web.app             │
+              │  ness-mkt.firebaseapp.com     │
+              └───────────────────────────────┘
+```
+
+### Fluxo de Autenticação
 
 ```mermaid
-graph LR
-    A[Acessar n.sign] --> B[Preencher Dados]
-    B --> C[Selecionar Template]
-    C --> D[Escolher Tema]
-    D --> E[Preview em Tempo Real]
-    E --> F{Ação}
-    F --> G[Copiar HTML]
-    F --> H[Exportar Imagem]
-    F --> I[Gerar QR Code]
-    F --> J[Compartilhar Link]
-    G --> K[Colar no Email]
+sequenceDiagram
+    participant U as Usuário
+    participant F as Frontend
+    participant A as Firebase Auth
+    participant D as Firestore
+
+    U->>F: Acessa ness.MKT
+    F->>A: signInWithPopup(Google)
+    A->>A: Valida @ness.com.br
+    A-->>F: User Credential
+    F->>D: Cria/Atualiza Profile
+    D-->>F: UserProfile
+    F-->>U: Dashboard
 ```
 
 ---
@@ -166,25 +256,36 @@ graph LR
 ## 🛠️ Stack Tecnológica
 
 ### Frontend
-- **[Next.js 16](https://nextjs.org/)** - Framework React com App Router
-- **[TypeScript 5](https://www.typescriptlang.org/)** - Tipagem estática
-- **[Tailwind CSS 4](https://tailwindcss.com/)** - Estilização utilitária
-- **[shadcn/ui](https://ui.shadcn.com/)** - Componentes UI (New York style)
-- **[Lucide Icons](https://lucide.dev/)** - Ícones outline
 
-### Backend
-- **[Prisma ORM](https://www.prisma.io/)** - ORM para banco de dados
-- **[Next.js API Routes](https://nextjs.org/docs/app/building-your-application/routing/route-handlers)** - API REST
+| Tecnologia | Versão | Propósito |
+|------------|--------|-----------|
+| [Next.js](https://nextjs.org/) | 16.x | Framework React com App Router |
+| [TypeScript](https://www.typescriptlang.org/) | 5.x | Tipagem estática |
+| [Tailwind CSS](https://tailwindcss.com/) | 4.x | Estilização utilitária |
+| [shadcn/ui](https://ui.shadcn.com/) | Latest | Componentes UI |
+| [Lucide Icons](https://lucide.dev/) | Latest | Ícones |
 
-### Dependências
-- **[html-to-image](https://github.com/bubkoo/html-to-image)** - Exportação de imagens
-- **[qrcode](https://www.npmjs.com/package/qrcode)** - Geração de QR Codes
-- **[nanoid](https://github.com/ai/nanoid)** - IDs únicos para URLs
-- **[sonner](https://sonner.emilkowal.ski/)** - Notificações toast
+### Backend & Infra
 
-### Banco de Dados
-- **Desenvolvimento**: SQLite
-- **Produção**: PostgreSQL (Vercel Postgres, Neon, Supabase)
+| Tecnologia | Propósito |
+|------------|-----------|
+| [Firebase Hosting](https://firebase.google.com/products/hosting) | Hospedagem estática |
+| [Firebase Functions](https://firebase.google.com/products/functions) | API serverless |
+| [Firebase Auth](https://firebase.google.com/products/auth) | Autenticação OAuth |
+| [Firestore](https://firebase.google.com/products/firestore) | Banco NoSQL |
+
+### Dependências Principais
+
+```json
+{
+  "firebase": "12.x",
+  "firebase-admin": "13.x",
+  "qrcode": "Geração de QR Codes",
+  "html-to-image": "Exportação de imagens",
+  "nanoid": "IDs únicos",
+  "sonner": "Notificações toast"
+}
+```
 
 ---
 
@@ -192,38 +293,37 @@ graph LR
 
 ### Pré-requisitos
 
-- **Node.js** >= 18.x
-- **Bun** >= 1.x (recomendado) ou npm/yarn/pnpm
+- **Bun** >= 1.x (recomendado) ou Node.js >= 18.x
 - **Git**
+- **Conta Firebase** (para produção)
 
-### Clone e Instalação
+### Desenvolvimento Local
 
 ```bash
 # Clone o repositório
-git clone https://github.com/resper1965/n.sign.git
-cd n.sign
+git clone https://github.com/resper1965/ness.MKT.git
+cd ness.MKT
 
 # Instale as dependências
 bun install
-# ou
-npm install
 
-# Configure o banco de dados
-bun run db:push
-# ou
-npx prisma db push
+# Instale dependências das Functions
+cd functions && npm install && cd ..
+
+# Configure variáveis de ambiente
+cp .env.example .env.local
 
 # Inicie o servidor de desenvolvimento
 bun run dev
-# ou
-npm run dev
 ```
 
-### Acesso
+### Acesso Local
 
 ```
 http://localhost:3000
 ```
+
+**Modo Demo:** Disponível automaticamente sem configuração Firebase
 
 ---
 
@@ -231,112 +331,126 @@ http://localhost:3000
 
 ### Variáveis de Ambiente
 
-Crie um arquivo `.env` na raiz do projeto:
+Crie `.env.local` na raiz:
 
 ```env
-# Banco de Dados (SQLite - Desenvolvimento)
-DATABASE_URL="file:./dev.db"
+# Firebase Client (obrigatório para produção)
+NEXT_PUBLIC_FIREBASE_API_KEY=your-api-key
+NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=ness-mkt.firebaseapp.com
+NEXT_PUBLIC_FIREBASE_PROJECT_ID=ness-mkt
+NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=ness-mkt.firebasestorage.app
+NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=your-sender-id
+NEXT_PUBLIC_FIREBASE_APP_ID=your-app-id
 
-# Banco de Dados (PostgreSQL - Produção)
-# DATABASE_URL="postgresql://user:password@host:5432/nsign?schema=public"
+# Gamma AI (opcional, para apresentações)
+GAMMA_API_KEY=your-gamma-api-key
+GAMMA_THEME_ID=your-theme-id
 ```
 
-### Configuração do Prisma
+### Firebase Service Account
 
-O schema está em `prisma/schema.prisma`. Para PostgreSQL, altere:
+Para Cloud Functions, configure no GitHub Secrets:
 
-```prisma
-datasource db {
-  provider = "postgresql"  // Mude de "sqlite" para "postgresql"
-  url      = env("DATABASE_URL")
+```
+FIREBASE_SERVICE_ACCOUNT={"type":"service_account",...}
+```
+
+### Áreas e Departamentos
+
+Edite `src/lib/organization.ts` para customizar:
+
+```typescript
+export const departments = {
+  executive: ['ceo', 'cfo', 'cto', 'coo', 'cmo', 'cio', 'cso', 'chro', 'cpo', 'cdo'],
+  operations: ['secops', 'infraops', 'devarch', 'autoops', 'privacy', 'cirt', 'discovery'],
+  backoffice: ['finance', 'hr', 'facilities'],
 }
 ```
 
 ---
 
-## 🚀 Uso
+## 🚀 Deploy
 
-### Desenvolvimento
+### Automático (GitHub Actions)
 
-```bash
-# Servidor de desenvolvimento
-bun run dev
+O deploy é automático a cada push no branch `master`:
 
-# Verificar código (lint)
-bun run lint
-
-# Gerar cliente Prisma
-bun run db:generate
-
-# Sincronizar schema com banco
-bun run db:push
+```yaml
+# .github/workflows/firebase-deploy.yml
+on:
+  push:
+    branches: [master]
 ```
 
-### Build de Produção
+**Status:** https://github.com/resper1965/ness.MKT/actions
+
+### URLs de Produção
+
+| URL | Descrição |
+|-----|-----------|
+| https://ness-mkt.web.app | Principal |
+| https://ness-mkt.firebaseapp.com | Alternativa |
+
+### Deploy Manual
 
 ```bash
-# Build
+# Build local
 bun run build
 
-# Iniciar servidor de produção
-bun run start
+# Build Functions
+cd functions && npm run build && cd ..
+
+# Deploy (requer Firebase CLI)
+firebase deploy
 ```
 
----
+### Secrets Necessários (GitHub)
 
-## 🌐 Deploy
-
-### Vercel (Recomendado)
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/resper1965/n.sign)
-
-#### Passo a Passo
-
-1. **Fork/Clone** este repositório para sua conta GitHub
-
-2. **Acesse [Vercel](https://vercel.com)** e clique em "New Project"
-
-3. **Importe o repositório** `n.sign`
-
-4. **Configure o banco de dados**:
-
-   **Opção A: Vercel Postgres** (Recomendado)
-   ```
-   Dashboard Vercel → Storage → Create Database → Postgres
-   ```
-   
-   **Opção B: Neon** (Gratuito)
-   ```
-   1. Acesse neon.tech
-   2. Crie um projeto gratuito
-   3. Copie a connection string
-   ```
-
-5. **Configure variáveis de ambiente**:
-   ```
-   DATABASE_URL=postgresql://...
-   ```
-
-6. **Deploy!**
-
-### Outras Plataformas
-
-| Plataforma | Compatibilidade |
-|------------|-----------------|
-| Railway | ✅ Suporte nativo a PostgreSQL |
-| Render | ✅ Web Service + PostgreSQL |
-| Fly.io | ✅ Requer configuração de banco |
-| AWS Amplify | ✅ Requer banco externo |
+| Secret | Descrição |
+|--------|-----------|
+| `FIREBASE_TOKEN` | Token CI do Firebase |
+| `FIREBASE_SERVICE_ACCOUNT` | JSON do service account |
+| `NEXT_PUBLIC_FIREBASE_*` | Configs do Firebase |
+| `GAMMA_API_KEY` | API key do Gamma.app |
 
 ---
 
 ## 📚 Documentação da API
 
+### Base URL
+
+```
+https://us-central1-ness-mkt.cloudfunctions.net
+```
+
 ### Endpoints
+
+#### `GET /api/signatures`
+
+Lista todas as assinaturas.
+
+**Response:**
+```json
+{
+  "signatures": [
+    {
+      "id": "abc123",
+      "nome": "João",
+      "sobrenome": "Silva",
+      "area": "cto",
+      "email": "joao.silva@ness.com.br",
+      "slug": "Xk9mN2pQ",
+      "views": 42
+    }
+  ]
+}
+```
+
+---
 
 #### `POST /api/signatures`
 
-Cria uma nova assinatura e retorna o link de compartilhamento.
+Cria uma nova assinatura.
 
 **Request:**
 ```json
@@ -344,6 +458,7 @@ Cria uma nova assinatura e retorna o link de compartilhamento.
   "nome": "João",
   "sobrenome": "Silva",
   "area": "cto",
+  "cargo": "CTO | Chief Technology Officer",
   "email": "joao.silva@ness.com.br",
   "telefone": "11 99999-9999",
   "linkedin": "joaosilva",
@@ -357,19 +472,9 @@ Cria uma nova assinatura e retorna o link de compartilhamento.
 ```json
 {
   "signature": {
-    "id": "cm2abc123xyz",
+    "id": "abc123",
     "slug": "Xk9mN2pQ",
-    "nome": "João",
-    "sobrenome": "Silva",
-    "area": "cto",
-    "email": "joao.silva@ness.com.br",
-    "telefone": "11 99999-9999",
-    "linkedin": "joaosilva",
-    "whatsapp": "11 99999-9999",
-    "template": "modern",
-    "theme": "branco",
-    "views": 0,
-    "createdAt": "2026-01-15T10:30:00.000Z"
+    ...
   },
   "shareUrl": "/s/Xk9mN2pQ"
 }
@@ -379,63 +484,46 @@ Cria uma nova assinatura e retorna o link de compartilhamento.
 
 #### `GET /api/signatures/:slug`
 
-Retorna uma assinatura pelo slug e incrementa o contador de visualizações.
+Retorna assinatura por slug.
 
 **Response:**
 ```json
 {
   "signature": {
-    "id": "cm2abc123xyz",
+    "id": "abc123",
     "slug": "Xk9mN2pQ",
     "nome": "João",
     "sobrenome": "Silva",
-    "area": "cto",
-    "email": "joao.silva@ness.com.br",
-    "telefone": "11 99999-9999",
-    "linkedin": "joaosilva",
-    "whatsapp": "11 99999-9999",
-    "template": "modern",
-    "theme": "branco",
-    "views": 42,
-    "createdAt": "2026-01-15T10:30:00.000Z"
+    ...
   }
 }
 ```
 
 ---
 
-#### `DELETE /api/signatures/:slug`
+#### `GET /api/proposals`
 
-Remove uma assinatura.
+Lista todas as propostas.
 
-**Response:**
+---
+
+#### `POST /api/proposals`
+
+Cria uma nova proposta.
+
+**Request:**
 ```json
 {
-  "success": true
+  "title": "Proposta de Serviços",
+  "clientName": "Empresa XYZ",
+  "clientEmail": "contato@xyz.com",
+  "description": "Descrição da proposta...",
+  "value": "R$ 50.000,00",
+  "status": "draft"
 }
 ```
 
 ---
-
-#### `GET /api/signatures`
-
-Lista todas as assinaturas (admin).
-
-**Response:**
-```json
-{
-  "signatures": [
-    {
-      "id": "cm2abc123xyz",
-      "slug": "Xk9mN2pQ",
-      "nome": "João",
-      "sobrenome": "Silva",
-      "area": "cto",
-      "views": 42
-    }
-  ]
-}
-```
 
 ### Códigos de Status
 
@@ -444,266 +532,161 @@ Lista todas as assinaturas (admin).
 | `200` | Sucesso |
 | `201` | Criado com sucesso |
 | `400` | Requisição inválida |
-| `404` | Assinatura não encontrada |
-| `500` | Erro interno do servidor |
+| `404` | Recurso não encontrado |
+| `405` | Método não permitido |
+| `500` | Erro interno |
 
 ---
 
 ## 🎨 Design System
 
-### Paleta de Cores NESS
+### Paleta de Cores
 
 | Nome | Hex | Uso |
 |------|-----|-----|
-| **Primary** | `#00ade8` | Cor principal, acentos |
-| **Primary Hover** | `#008bb8` | Hover em botões |
-| **Primary Light** | `#4dc2ff` | Destaques sutis |
-| **Primary Dark** | `#006988` | Elementos escuros |
-| **Background** | `#0f172a` | Fundo principal |
-| **Card** | `#1e293b` | Cards e painéis |
+| **Primary** | `#00ade8` | Cor principal |
+| **Primary Hover** | `#008bb8` | Hover |
+| **Background** | `#0f172a` | Fundo dark |
+| **Card** | `#1e293b` | Cards |
 | **Border** | `#334155` | Bordas |
-| **Text Primary** | `#f1f5f9` | Texto principal |
-| **Text Secondary** | `#94a3b8` | Texto secundário |
-| **Text Muted** | `#64748b` | Texto desabilitado |
+| **Text** | `#f1f5f9` | Texto |
 
-### Regras da Marca
+### Logo
 
-```css
-/* ✅ Correto */
-ness.
+```html
+<!-- ✅ Correto -->
+<span class="text-2xl font-medium">
+  ness<span class="text-[#00ade8]">.</span>
+</span>
 
-/* ❌ Incorreto */
+<!-- ❌ Incorreto -->
 NESS.
 NESS
 ness
 ```
 
-- Sempre em minúsculas: `ness`
-- Ponto final obrigatório: `.`
-- Ponto sempre em `#00ade8`
-
 ### Tipografia
 
-| Elemento | Fonte | Peso | Tamanho |
-|----------|-------|------|---------|
-| Logo | Montserrat | 500 | 42px |
-| Títulos | Montserrat | 600 | 17-20px |
-| Corpo | Montserrat | 400 | 11-12px |
-| Labels | Montserrat | 700 | 9-11px |
-
-### Componentes
-
-#### Botões
-
-```tsx
-// Primary
-<Button className="bg-[#00ade8] hover:bg-[#008bb8] text-white">
-  Ação
-</Button>
-
-// Outline
-<Button variant="outline" className="border-2 border-[#00ade8] text-[#00ade8] hover:bg-[#00ade8] hover:text-white">
-  Ação
-</Button>
-
-// Ghost
-<Button variant="ghost" className="text-[#00ade8] hover:bg-[#00ade8]/10">
-  Ação
-</Button>
-```
-
-#### Inputs
-
-```tsx
-<Input className="bg-slate-900 border-slate-700 text-white focus:ring-2 focus:ring-[#00ade8]/50 focus:border-[#00ade8]" />
-```
-
----
-
-## 📐 Templates
-
-### 1. Clássico
-
-Layout tradicional com logo à esquerda separado por linha vertical.
-
-```
-┌─────────────┬──────────────────────────────┐
-│             │ Nome Sobrenome               │
-│   ness.     │ ÁREA | CARGO                 │
-│             │ 📞 +55 (11) 2504-7650        │
-│             │ 📱 +55 11 99999-9999         │
-│             │ 📧 email@ness.com.br         │
-│             │ 🌐 ness.com.br               │
-└─────────────┴──────────────────────────────┘
-```
-
-**Ideal para:** Operações, Security, Backoffice
-
----
-
-### 2. Moderno
-
-Design clean com linha colorida superior.
-
-```
-ness.
-─────────────────────────────────
-
-Nome Sobrenome
-ÁREA | CARGO
-
-📞 +55 (11) 2504-7650
-📱 +55 11 99999-9999
-📧 email@ness.com.br
-🌐 ness.com.br
-
-[LinkedIn] [WhatsApp]
-```
-
-**Ideal para:** CTO, CMO, CPO, CDO
-
----
-
-### 3. Minimal
-
-Versão compacta e direta.
-
-```
-Nome Sobrenome
-ÁREA | CARGO
-
-📧 email@ness.com.br  📞 +55 (11) 2504-7650
-📱 +55 11 99999-9999
-🌐 ness.com.br
-```
-
-**Ideal para:** Finance, HR, Facilities
-
----
-
-### 4. Corporativo
-
-Layout profissional em grade.
-
-```
-┌────────────────────────────────────────────┐
-│ ness.                  Nome Sobrenome      │
-│ Cybersecurity &       ÁREA | CARGO         │
-│ Tech Solutions                             │
-├────────────────────────────────────────────┤
-│ 📞 +55 (11) 2504-7650   📱 +55 11 99999... │
-│ 📧 email@ness.com.br    🌐 ness.com.br     │
-└────────────────────────────────────────────┘
-```
-
-**Ideal para:** CEO, CFO, COO, CIO, CSO, CHRO
-
----
-
-## ⌨️ Atalhos de Teclado
-
-| Atalho | Ação | Contexto |
-|--------|------|----------|
-| `Ctrl + S` | Salvar assinatura | Formulário preenchido |
-| `Ctrl + Shift + C` | Copiar HTML | Formulário preenchido |
-| `Ctrl + E` | Exportar PNG | Formulário preenchido |
+| Elemento | Fonte | Peso |
+|----------|-------|------|
+| Logo | Montserrat | 500 |
+| Títulos | Montserrat | 600 |
+| Corpo | Montserrat | 400 |
+| Labels | Montserrat | 700 |
 
 ---
 
 ## 📁 Estrutura do Projeto
 
 ```
-n.sign/
-├── 📁 prisma/
-│   └── 📄 schema.prisma        # Schema do banco de dados
+ness.MKT/
+├── .github/
+│   └── workflows/
+│       └── firebase-deploy.yml     # CI/CD
 │
-├── 📁 src/
-│   ├── 📁 app/
-│   │   ├── 📁 api/
-│   │   │   └── 📁 signatures/
-│   │   │       ├── 📄 route.ts           # GET, POST /api/signatures
-│   │   │       └── 📁 [slug]/
-│   │   │           └── 📄 route.ts       # GET, DELETE /api/signatures/:slug
-│   │   │
-│   │   ├── 📁 s/
-│   │   │   └── 📁 [slug]/
-│   │   │       └── 📄 page.tsx           # Página de assinatura compartilhada
-│   │   │
-│   │   ├── 📄 layout.tsx       # Layout principal + metadados
-│   │   ├── 📄 page.tsx         # Página principal do gerador
-│   │   └── 📄 globals.css      # Estilos globais + animações
-│   │
-│   ├── 📁 components/
-│   │   └── 📁 ui/              # Componentes shadcn/ui
-│   │
-│   └── 📁 lib/
-│       └── 📄 db.ts            # Cliente Prisma
+├── functions/                      # Cloud Functions
+│   ├── src/
+│   │   └── index.ts               # API endpoints
+│   ├── package.json
+│   └── tsconfig.json
 │
-├── 📄 package.json             # Dependências e scripts
-├── 📄 tailwind.config.ts       # Configuração Tailwind + tema NESS
-├── 📄 tsconfig.json            # Configuração TypeScript
-├── 📄 next.config.ts           # Configuração Next.js
-└── 📄 README.md                # Esta documentação
+├── src/
+│   ├── app/                       # Next.js App Router
+│   │   ├── page.tsx              # Dashboard
+│   │   ├── layout.tsx            # Layout principal
+│   │   ├── globals.css           # Estilos globais
+│   │   │
+│   │   ├── apresentacoes/        # Módulo Apresentações
+│   │   ├── assinaturas/          # Módulo Assinaturas
+│   │   ├── cartao-visita/        # Módulo Cartões
+│   │   ├── manual-marca/         # Módulo Manual
+│   │   ├── press-kit/            # Módulo Press Kit
+│   │   ├── propostas/            # Módulo Propostas
+│   │   ├── redes-sociais/        # Módulo Redes Sociais
+│   │   ├── templates-email/      # Módulo Templates
+│   │   └── s/                    # Página compartilhada
+│   │
+│   ├── components/
+│   │   ├── ui/                   # shadcn/ui components
+│   │   └── providers.tsx         # Context providers
+│   │
+│   ├── contexts/
+│   │   └── AuthContext.tsx       # Autenticação Firebase
+│   │
+│   ├── lib/
+│   │   ├── firebase.ts           # Firebase client
+│   │   ├── firebase-admin.ts     # Firebase admin
+│   │   └── organization.ts       # Departamentos/áreas
+│   │
+│   └── services/
+│       └── firestore.ts          # Firestore operations
+│
+├── firebase.json                  # Firebase config
+├── .firebaserc                    # Firebase project
+├── package.json
+├── tailwind.config.ts
+├── tsconfig.json
+└── README.md
 ```
 
 ---
 
 ## 🤝 Contribuição
 
-### Fluxo de Contribuição
+### Fluxo de Trabalho
 
 1. **Fork** o repositório
-2. **Crie uma branch** (`git checkout -b feature/nova-funcionalidade`)
-3. **Commit** suas mudanças (`git commit -m 'feat: adiciona nova funcionalidade'`)
-4. **Push** para a branch (`git push origin feature/nova-funcionalidade`)
-5. **Abra um Pull Request`
+2. **Crie uma branch**: `git checkout -b feature/nova-funcionalidade`
+3. **Commit**: `git commit -m 'feat: descrição'`
+4. **Push**: `git push origin feature/nova-funcionalidade`
+5. **Pull Request**
 
 ### Padrões de Commit
-
-Seguimos [Conventional Commits](https://www.conventionalcommits.org/):
 
 | Tipo | Descrição |
 |------|-----------|
 | `feat` | Nova funcionalidade |
 | `fix` | Correção de bug |
 | `docs` | Documentação |
-| `style` | Formatação, ponto e vírgula, etc |
-| `refactor` | Refatoração de código |
-| `test` | Adição/correção de testes |
-| `chore` | Tarefas de manutenção |
+| `style` | Formatação |
+| `refactor` | Refatoração |
+| `test` | Testes |
+| `chore` | Manutenção |
 
-### Código de Conduta
+### Convenções de Código
 
-- Seja respeitoso e inclusivo
-- Aceite críticas construtivas
-- Foque no que é melhor para a comunidade
+- **TypeScript** estrito
+- **ESLint** para linting
+- **Prettier** para formatação
+- Componentes funcionais com hooks
+- CSS com Tailwind (evitar CSS-in-JS)
 
 ---
 
 ## 📊 Roadmap
 
-### v2.2 (Próximo)
+### v1.1 (Próximo)
 
-- [ ] Upload de foto de perfil
-- [ ] Assinaturas em massa (importar CSV)
-- [ ] API de integração com HR systems
+- [ ] Upload de fotos de perfil
+- [ ] Assinaturas em massa (CSV)
 - [ ] Dashboard administrativo
+- [ ] Analytics de visualizações
 
-### v2.3 (Futuro)
+### v1.2 (Futuro)
 
-- [ ] Múltiplos idiomas (PT-BR, EN, ES)
-- [ ] Templates customizáveis
-- [ ] Analytics de cliques
-- [ ] Webhooks para integrações
+- [ ] Integração Gamma completa
+- [ ] Webhooks para notificações
+- [ ] API pública documentada
+- [ ] Múltiplos idiomas (EN, ES)
 
 ---
 
 ## 📄 Licença
 
 ```
-© 2026 NESS. Todos os direitos reservados.
+© 2026 NESS Cybersecurity & Tech Solutions.
+Todos os direitos reservados.
 
-Este software é propriedade da NESS Cybersecurity & Tech Solutions.
 Uso restrito a colaboradores e parceiros autorizados.
 ```
 
@@ -711,48 +694,21 @@ Uso restrito a colaboradores e parceiros autorizados.
 
 ## 📞 Suporte
 
-### Canais
-
 | Canal | Contato |
 |-------|---------|
-| **Email** | contato@ness.com.br |
 | **Website** | [ness.com.br](https://www.ness.com.br) |
-| **GitHub Issues** | [github.com/resper1965/n.sign/issues](https://github.com/resper1965/n.sign/issues) |
-
-### FAQ
-
-<details>
-<summary><strong>Como usar a assinatura no Gmail?</strong></summary>
-
-1. Copie a assinatura clicando em "Copiar HTML"
-2. Acesse Gmail → Configurações → Ver todas as configurações
-3. Role até "Assinatura" e cole na caixa de texto
-4. Salve as alterações
-
-</details>
-
-<details>
-<summary><strong>Por que meu email não é validado?</strong></summary>
-
-O sistema valida apenas emails corporativos NESS (`@ness.com.br`). Se você é colaborador, use seu email institucional.
-
-</details>
-
-<details>
-<summary><strong>As assinaturas ficam salvas onde?</strong></summary>
-
-- **Localmente**: No navegador (localStorage)
-- **Compartilhamento**: No banco de dados PostgreSQL
-
-</details>
+| **Email** | contato@ness.com.br |
+| **GitHub** | [github.com/resper1965/ness.MKT](https://github.com/resper1965/ness.MKT) |
 
 ---
 
 <p align="center">
-  <strong>n.sign</strong><br>
-  <em>Desenvolvido com ❤️ para NESS Cybersecurity & Tech Solutions</em>
+  <strong>ness.MKT</strong><br>
+  <em>Part of ness.OS ecosystem</em>
 </p>
 
 <p align="center">
-  <a href="https://www.ness.com.br" target="_blank">ness.com.br</a>
+  <a href="https://ness-mkt.web.app" target="_blank">
+    <img src="https://img.shields.io/badge/Acessar-ness--mkt.web.app-00ade8?style=for-the-badge" alt="Access">
+  </a>
 </p>
